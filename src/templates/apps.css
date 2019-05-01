@@ -8408,13 +8408,12 @@ screen and (min-width: 64em) {
 }
 
 .slider .slick-track .slide1 {
-	background: url(../img/assets/img/hero01.png) no-repeat;
 	background-size: cover;
 	background-position: 20% 0%
 }
 
 .slider .slick-track .slide2 {
-	background: url(../img/assets/img/hero02.png) no-repeat;
+	background: url('/img/hero02.png') no-repeat;
 	background-size: cover;
 	background-position: 0% 0%
 }
@@ -8667,7 +8666,7 @@ screen and (min-width: 64em) {
 }
 
 .category-icons {
-	background-image: url("../img/assets/yellow-bg.png");
+	background-image: url(/img/assets/yellow-bg.png);
 	box-shadow: inset 0px 9px 19px -9px rgba(176, 145, 9, 0.62)
 }
 
@@ -8885,7 +8884,7 @@ screen and (min-width: 40em) {
 
 .about {
 	padding: 3.125rem 0;
-	background: #eeefef url("../img/assets/img/beans.png") no-repeat;
+	background: #eeefef url(/img/assets/img/beans.png) no-repeat;
 	background-size: 90%;
 	background-position: left -6.25rem bottom -9.375rem;
 	height: 100%
@@ -9306,7 +9305,7 @@ screen and (min-width: 64em) {
 
 .footer {
 	padding: 3.125rem 0 0 0;
-	background: url("../img/assets/img/contact-bg.png") no-repeat;
+	background: url(/img/assets/img/contact-bg.png) no-repeat;
 	background-position: 60% 0%;
 	background-size: cover
 }
@@ -9608,7 +9607,7 @@ screen and (min-width: 64em) {
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
-	background: rgba(0, 0, 0, 0.8) url("../img/assets/icon-top-arrow.svg") no-repeat center 50%;
+	background: rgba(0, 0, 0, 0.8) url(/img/assets/icon-top-arrow.svg) no-repeat center 50%;
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.3s
