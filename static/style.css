@@ -1,0 +1,13 @@
+.item-block {
+  display: inline-block;
+  width: 49%;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 200px;
+}
+.center {
+  object-fit: cover;
+}
+#Layer_1 {
+  color: #fff;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 // import Footer from "../components/Footer";
-// import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 // import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 
@@ -43,11 +43,25 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
-        <link rel="stylesheet" href="apps.css" />
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="app.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"
+        />
+        <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6" />
       </Helmet>
-      {/* <Navbar /> */}
+      <Navbar />
       <>{children}</>
-      {/* <Footer /> */}
     </div>
   );
 };

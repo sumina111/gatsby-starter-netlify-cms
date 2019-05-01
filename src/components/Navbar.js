@@ -1,96 +1,104 @@
 import React from "react";
-import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-// import logo from '../img/logo.svg'
+import navSvg from "../img/nav.svg";
+import nav1Svg from "../img/nav1.svg";
 
 const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: ""
-    };
-  }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active"
-            })
-          : this.setState({
-              navBarActiveClass: ""
-            });
-      }
-    );
-  };
-
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <header className="site-header">
         <div className="container">
-          <div className="navbar-brand">
-            {/* <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link> */}
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
+          <div className="header-content">
+            <div className="top-menu  scroll-reveal">
+              <div className="menu">
+                <div
+                  className="title-bar"
+                  data-responsive-toggle="main-nav"
+                  data-hide-for="medium"
+                >
+                  <button
+                    className="menu-icon dark"
+                    type="button"
+                    data-toggle="main-nav"
+                  />
+                  <div className="title-bar-title">Menu</div>
+                </div>
+                <nav id="main-nav" data-animate="menu-in menu-out">
+                  <ul className="main-navigation">
+                    <li>
+                      <a className="m-anim" href="#" data-text="Home">
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="m-anim"
+                        href="https://kriticraft.trustpass.alibaba.com"
+                        target="-blank"
+                        data-text="Specials"
+                      >
+                        Products
+                      </a>
+                    </li>
+                    <li>
+                      <a className="m-anim" href="#about-us" data-text="About">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="m-anim"
+                        href="#testimonial"
+                        data-text="Testimonial"
+                      >
+                        Testimonial
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="m-anim"
+                        href="#contact-us"
+                        data-text="Contact"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/Home">
-                Home
-              </Link>
-              <Link className="navbar-item" to="/products">
-                abcd
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            {/* <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div> */}
           </div>
         </div>
-      </nav>
+        <div className="slider">
+          <div className="a-slide slide1">
+            <div className="container">
+              <div
+                className="bottom-section scroll-reveal"
+                data-origin="right"
+                data-distance="20%"
+              >
+                <h1 className="header-txt">
+                  Best quality for respectable price
+                </h1>
+                <div className="divider">
+                  <img src={navSvg} alt="nav bar" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="a-slide slide2">
+            <div className="container">
+              <div className="bottom-section">
+                <h1 className="header-txt">
+                  We use high quality raw products.
+                </h1>
+                <div className="divider">
+                  <img src={nav1Svg} alt="nav bar" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     );
   }
 };

@@ -9305,7 +9305,7 @@ screen and (min-width: 64em) {
 
 .footer {
 	padding: 3.125rem 0 0 0;
-	background: url(/img/assets/img/contact-bg.png) no-repeat;
+	background: url("/img/contact-bg.png") no-repeat;
 	background-position: 60% 0%;
 	background-size: cover
 }
