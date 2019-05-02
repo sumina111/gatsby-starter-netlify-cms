@@ -1,6 +1,6 @@
 import React from "react";
-import navSvg from "../img/nav.svg";
-import nav1Svg from "../img/nav1.svg";
+import navSvg from "../img/img/nav.svg";
+import nav1Svg from "../img/img/nav1.svg";
 
 const Navbar = class extends React.Component {
   render() {
@@ -22,7 +22,11 @@ const Navbar = class extends React.Component {
                   />
                   <div className="title-bar-title">Menu</div>
                 </div>
-                <nav id="main-nav" data-animate="menu-in menu-out">
+                <nav
+                  id="main-nav"
+                  data-animate="menu-in menu-out"
+                  style={{ zIndex: 10 }}
+                >
                   <ul className="main-navigation">
                     <li>
                       <a className="m-anim" href="#" data-text="Home">

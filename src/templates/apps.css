@@ -8666,7 +8666,7 @@ screen and (min-width: 64em) {
 }
 
 .category-icons {
-	background-image: url(/img/assets/yellow-bg.png);
+	background-image: url('/img/assets/yellow-bg.png');
 	box-shadow: inset 0px 9px 19px -9px rgba(176, 145, 9, 0.62)
 }
 
