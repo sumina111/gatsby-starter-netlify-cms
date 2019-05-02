@@ -29,12 +29,18 @@ const Navbar = class extends React.Component {
                 >
                   <ul className="main-navigation">
                     <li>
-                      <a className="m-anim" href="#" data-text="Home">
+                      <a
+                        // rel="stylesheet"
+                        href="#"
+                        data-text="Home"
+                        className="m-anim"
+                      >
                         Home
                       </a>
                     </li>
                     <li>
                       <a
+                        // rel="stylesheet"
                         className="m-anim"
                         href="https://kriticraft.trustpass.alibaba.com"
                         target="-blank"

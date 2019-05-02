@@ -25,7 +25,7 @@ import latestpurse from "../img/img/latest/purse.jpg";
 import rug from "../img/img/rug/rug1.jpg";
 import feltrug from "../img/img/rug/feltpebblerug.jpg";
 import shoes1 from "../img/img/shoes/gshoes.jpg";
-// import hero01 from "../img/assets/img/hero01.png";
+// import contactus from "../img/img/contactus.svg";
 
 export const IndexPageTemplate = () => (
   <div>
